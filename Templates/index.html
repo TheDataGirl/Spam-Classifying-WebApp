@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--copy paste this code if you want to connect css in separate folder<link rel="stylesheet" href="CSS/style.css">-->
+   <style type="text/css">
+     body{
+background: rgba(42, 102, 68 , 0.2);
+}
+p{
+  margin-left: auto;
+  margin-right: auto;
+  right:90%;
+   width:19%;
+}
+#submit{
+ position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  left:47%;
+  max-width: 20%;
+}
+.pastemails{
+  position: relative;
+  left:34%;
+  padding-bottom: 18px;
+}
+.results{
+  border-radius:15px;
+  background: #345fe4;
+  padding:20px;
+  width:200px;
+  height:150px;
+}
+   </style>
+  <link href="assets/css/style.css" rel="stylesheet">
+    <title>Spam Classifier</title>
+  </head>
+  <body>
+    <h1></h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html" style="color:#2A6644">SPAM CLASSIFIER</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color:#2A6644">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:#2A6644">Classify</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:#2A6644">Types
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Junk Sorting</a></li>
+             <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Advertisements</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Important</a></li>
+          </ul>
+          <li class="nav-item">
+          <a class="nav-link" href="#">about us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+     <div class="text-center">
+       <img src="./Images/logo.png" class="rounded" alt="logo" style="max-width:30%;">
+    </div>
+
+<p>
+<a class="btn btn-link" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" style="color:#DC143C">READ TERMS AND CONDITIONS</a>
+</p>
+    <div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        bla bla bla yada yada yada brrrrr you're not going to read it anyway 
+      </div>
+    </div>
+  </div>
+  <!--to be filled by debozzzz---->
+  <form action="{{ url_for('predict')}}" method="POST">
+    <div class="pastemails">
+      <textarea name="message" class="form-control form-control-lg" type="text" placeholder="paste your mail here" aria-label=".form-control-lg example"style="height:200px; width:400px;"></textarea>
+    </div>
+    <!-- Button trigger page? page agar banana ho to batana(vo video me dikha nhi) -->
+    <p>
+    <input class="btn btn-primary" type="submit" value="submit" id="submit" data-bs-toggle="modal" role="button" data-bs-target="#staticBackdrop">
+    </p>
+    
+    </form>
+   <!--please don't hurt me i'll ruin your page-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  
+  </body>
+</html>

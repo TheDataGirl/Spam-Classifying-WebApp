@@ -1,0 +1,23 @@
+body{
+/*background: rgba(0, 0, 0, 0.5);  background: rgba(255, 255, 255, 0.5); */
+background: rgba(42, 102, 68 , 0.2);
+}
+p{
+  margin-left: auto;
+  margin-right: auto;
+  right:90%;
+   width:19%;
+}
+#submit{
+ position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  left:47%;
+  max-width: 20%;
+}
+.pastemails{
+	position: relative;
+	left:34%;
+	padding-bottom: 18px;
+}
